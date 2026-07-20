@@ -203,7 +203,7 @@ button:hover,
     transition:.3s;
 }
 
-.card:hover{
+.card:active{
     border-color:#32cd32;
     box-shadow:0 0 25px rgba(50,205,50,.35);
 }
@@ -339,3 +339,4 @@ main{
 }
 
 }
+
