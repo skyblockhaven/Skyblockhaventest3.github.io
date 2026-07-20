@@ -54,9 +54,21 @@ header{
     border-bottom:2px solid #32cd32;
 }
 
-/* Logo */
+/* Logo (header, static) */
 
 .logo{
+    font-size:30px;
+    font-weight:bold;
+    color:#7CFC00;
+}
+
+.logo span{
+    color:white;
+}
+
+/* Logo (large hero version, floats) */
+
+.logo-hero{
     font-size:60px;
     font-weight:bold;
     text-align:center;
@@ -66,15 +78,11 @@ header{
     animation:float 3s infinite;
 }
 
-.logo small{
+.logo-hero small{
     display:block;
     font-size:20px;
     letter-spacing:8px;
     color:#00ff55;
-}
-
-.logo span{
-    color:white;
 }
 
 @keyframes float{
@@ -294,7 +302,7 @@ main{
     margin:0;
 }
 
-.logo{
+.logo-hero{
     font-size:40px;
 }
 
