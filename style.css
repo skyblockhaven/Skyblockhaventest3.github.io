@@ -6,6 +6,23 @@
     box-sizing:border-box;
 }
 
+/* Baseline spacing (the reset above strips default margins,
+   so headings/paragraphs need this or they'll overlap whatever
+   comes right after them, like buttons) */
+h1,h2,h3,h4,h5,h6{
+    margin-bottom:12px;
+}
+
+p{
+    margin-bottom:15px;
+    line-height:1.5;
+}
+
+.card .button,
+.card button{
+    margin-top:10px;
+}
+
 body{
     margin:0;
     font-family:Arial, sans-serif;
@@ -178,15 +195,25 @@ button:hover,
 }
 
 .card{
-    background:#111c;
-    padding:30px;
+    background:linear-gradient(135deg,rgba(10,30,10,.9),rgba(20,45,20,.9));
+    padding:35px;
     margin:25px 0;
-    border-radius:20px;
-    box-shadow:0 0 25px black;
+    border:2px solid #32cd32;
+    border-radius:26px;
+    box-shadow:0 0 25px rgba(50,205,50,.35);
 }
 
 .card h2{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-size:28px;
     margin-bottom:15px;
+}
+
+.card p{
+    font-size:18px;
+    opacity:.9;
 }
 
 .grid{
